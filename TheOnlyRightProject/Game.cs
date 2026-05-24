@@ -1,5 +1,7 @@
 namespace TheOnlyRightProject;
-
+/// <summary>
+/// Game class
+/// </summary>
 public class Game
 {
     public List<Riddle> riddles = new List<Riddle>();
