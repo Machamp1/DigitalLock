@@ -1,0 +1,20 @@
+„Jsem sudé číslo menší než 10. Když mě vynásobíš třemi, dostaneš 18. Co jsem?“; Jsem větší než 5.;6
+„Kolik písmen má číslo, které je součtem 4 a 4?“; Nejprve spočítej příklad.;4
+„Pokud je dnes pondělí, jaký den bude za 14 dní?“; 14 dní jsou dva týdny.;pondeli
+„Mám ručičky, ale neumím tleskat. Co jsem?“; Ukazuji čas.;hodiny
+„Jsem číslo mezi 10 a 20. Když mě rozdělíš dvěma, dostaneš 8. Co jsem?“;Jsem sudé číslo.;16
+„Kolik písmen má číslo 100?“; Nehledej číslice, ale slovo.;3
+„Pokud je dnes středa, jaký den bude za 21 dní?“; 21 dní jsou tři týdny.;středa
+„Vidíš skrz mě, ale přesto zavírám okno. Co jsem?“; Visím u okna.;závěs
+„Jsem liché číslo. Když ke mně přičteš 2, dostaneš 11. Co jsem?“;Jsem menší než 10.;9
+„Kolik písmen má číslo, které vznikne jako 2 × 2?“; Nejprve vypočítej příklad.;4
+„Pokud je dnes sobota, jaký den bude za 9 dní?“; 7 dní je týden.;pondělí
+„Mluvím bez úst a odpovídám ti. Co jsem?“; Slyšíš mě v horách.;echo
+„Jsem číslo menší než 10. Když ode mě odečteš 1, dostaneš 6. Co jsem?“; Jsem liché číslo.;7
+„Kolik písmen má číslo 7?“; Přemýšlej o slově, ne o číslici.;4
+„Pokud je dnes úterý, jaký den bude za 100 dní?“; 98 dní je přesně 14 týdnů.;čtvrtek
+„Ukazuji tvůj obličej, ale nejsem člověk. Co jsem?“; Najdeš mě v koupelně.;zrcadlo
+„Jsem sudé číslo větší než 5. Když ke mně přičteš 4, dostaneš 12. Co jsem?“; Jsem menší než 10.;8
+„Kolik písmen má číslo, které je výsledkem 3 + 3?“; Nejprve spočítej součet.;4
+„Pokud je dnes čtvrtek, jaký den bude za 28 dní?“; 28 dní jsou čtyři týdny.;čtvrtek
+„Mám klávesy, ale žádné dveře neotevřu. Co jsem?“; Hraju hudbu.;klavir

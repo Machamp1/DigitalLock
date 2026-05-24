@@ -1,0 +1,13 @@
+╔══════════════════════════════════════════════════════╗
+║ ÚNIK Z LABORATOŘE                                    ║
+╚══════════════════════════════════════════════════════╝
+
+Probudíte se v tiché laboratoři. Světla blikají.
+Jediné dveře jsou zablokované trezorem se čtyřmístným
+kódem. Na stole leží vzkaz:
+
+„Kód je rozdělen do čtyř částí.
+Každou část skrývá jedna hádanka.
+Vyřeš je – nebo tu zůstaň navždy."
+
+Stiskni Enter pro zahájení...
