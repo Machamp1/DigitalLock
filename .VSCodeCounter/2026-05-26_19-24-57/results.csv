@@ -1,0 +1,10 @@
+"filename", "language", "C#", "Markdown", "XML", "comment", "blank", "total"
+"/Users/admin/projects/TheOnlyRightProject/README.md", "Markdown", 0, 1, 0, 0, 1, 2
+"/Users/admin/projects/TheOnlyRightProject/TheOnlyRightProject/ConsoleLogger.cs", "C#", 34, 0, 0, 0, 6, 40
+"/Users/admin/projects/TheOnlyRightProject/TheOnlyRightProject/DigitalCode.cs", "C#", 45, 0, 0, 8, 3, 56
+"/Users/admin/projects/TheOnlyRightProject/TheOnlyRightProject/Game.cs", "C#", 140, 0, 0, 15, 10, 165
+"/Users/admin/projects/TheOnlyRightProject/TheOnlyRightProject/ILogger.cs", "C#", 9, 0, 0, 0, 1, 10
+"/Users/admin/projects/TheOnlyRightProject/TheOnlyRightProject/Program.cs", "C#", 10, 0, 0, 0, 1, 11
+"/Users/admin/projects/TheOnlyRightProject/TheOnlyRightProject/Riddle.cs", "C#", 69, 0, 0, 0, 4, 73
+"/Users/admin/projects/TheOnlyRightProject/TheOnlyRightProject/TheOnlyRightProject.csproj", "XML", 0, 0, 16, 0, 6, 22
+"Total", "-", 307, 1, 16, 23, 32, 379

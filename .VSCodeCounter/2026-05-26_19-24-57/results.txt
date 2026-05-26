@@ -1,0 +1,36 @@
+Date : 2026-05-26 19:24:57
+Directory : /Users/admin/projects/TheOnlyRightProject
+Total : 8 files,  324 codes, 23 comments, 32 blanks, all 379 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| C#       |          6 |        307 |         23 |         25 |        355 |
+| XML      |          1 |         16 |          0 |          6 |         22 |
+| Markdown |          1 |          1 |          0 |          1 |          2 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                     | files      | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                        |          8 |        324 |         23 |         32 |        379 |
+| . (Files)                                                                                |          1 |          1 |          0 |          1 |          2 |
+| TheOnlyRightProject                                                                      |          7 |        323 |         23 |         31 |        377 |
++------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                                                 | language | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| /Users/admin/projects/TheOnlyRightProject/README.md                                      | Markdown |          1 |          0 |          1 |          2 |
+| /Users/admin/projects/TheOnlyRightProject/TheOnlyRightProject/ConsoleLogger.cs           | C#       |         34 |          0 |          6 |         40 |
+| /Users/admin/projects/TheOnlyRightProject/TheOnlyRightProject/DigitalCode.cs             | C#       |         45 |          8 |          3 |         56 |
+| /Users/admin/projects/TheOnlyRightProject/TheOnlyRightProject/Game.cs                    | C#       |        140 |         15 |         10 |        165 |
+| /Users/admin/projects/TheOnlyRightProject/TheOnlyRightProject/ILogger.cs                 | C#       |          9 |          0 |          1 |         10 |
+| /Users/admin/projects/TheOnlyRightProject/TheOnlyRightProject/Program.cs                 | C#       |         10 |          0 |          1 |         11 |
+| /Users/admin/projects/TheOnlyRightProject/TheOnlyRightProject/Riddle.cs                  | C#       |         69 |          0 |          4 |         73 |
+| /Users/admin/projects/TheOnlyRightProject/TheOnlyRightProject/TheOnlyRightProject.csproj | XML      |         16 |          0 |          6 |         22 |
+| Total                                                                                    |          |        324 |         23 |         32 |        379 |
++------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+

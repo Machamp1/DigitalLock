@@ -158,8 +158,15 @@ public class Game
     /// </summary>
     public void Start()
     {
-        WriteStartMessage();
-        Play();
-        GuessCode();
+        // WriteStartMessage();
+        // Play();
+        // GuessCode();
+        Selection selection = new Selection(new string[]
+        {
+               "1) A hint press H",
+                  "2) To resign press R",
+                    "3) To proceed press enter"
+        });
+        var result = selection.Select();
     }
 }
