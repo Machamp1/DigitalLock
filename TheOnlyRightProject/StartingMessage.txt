@@ -1,13 +1,10 @@
 ╔══════════════════════════════════════════════════════╗
-║ ÚNIK Z LABORATOŘE                                    ║
+║ ESCAPE FROM THE LABORATORY                           ║
 ╚══════════════════════════════════════════════════════╝
-
-Probudíte se v tiché laboratoři. Světla blikají.
-Jediné dveře jsou zablokované trezorem se čtyřmístným
-kódem. Na stole leží vzkaz:
-
-„Kód je rozdělen do čtyř částí.
-Každou část skrývá jedna hádanka.
-Vyřeš je – nebo tu zůstaň navždy."
-
-Stiskni Enter pro zahájení...
+You wake up in a silent laboratory. The lights are flickering.
+The only door is locked by a safe with a four-digit
+code. On the table lies a note:
+“The code is divided into four parts.
+Each part is hidden in a riddle.
+Solve them — or stay here forever.”
+Press Enter to begin...

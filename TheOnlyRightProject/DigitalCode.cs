@@ -2,15 +2,6 @@ namespace TheOnlyRightProject;
 
 public class DigitalCode
 {
-    
-    /*int[] digits = null;
-    int length = 4;
-    public DigitalCode(int length)
-    {
-        digits = new int[length];
-        GenerateRandom();
-    }*/
-
     private byte[] Numbers;
     private List<byte> UnshownDigits = new List<byte>();
     
@@ -26,10 +17,8 @@ public class DigitalCode
             // Console.WriteLine(Numbers[i]);
             Numbers[i] = (byte)random.Next(0, 10);
         }
-        
         UnshownDigits.AddRange(Numbers);
     }
-
     /// <summary>
     /// Next random digit in the code
     /// </summary>
@@ -46,12 +35,10 @@ public class DigitalCode
         UnshownDigits.RemoveAt(index);
         return number;
     }
-
     public string CorrectCode()
     {
         return string.Join("", Numbers);
     }
-
     public string GetCountOfCorrectDigits(string input)
     {
         int countOfCorrectDigits = 0;
@@ -67,4 +54,3 @@ public class DigitalCode
         return $"Amount of Digits on right place is: {countOfCorrectDigits}";
     }
 }
-

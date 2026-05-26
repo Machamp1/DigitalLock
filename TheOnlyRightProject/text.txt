@@ -1,20 +1,20 @@
-„Jsem sudé číslo menší než 10. Když mě vynásobíš třemi, dostaneš 18. Co jsem?“; Jsem větší než 5.;6
-„Kolik písmen má číslo, které je součtem 4 a 4?“; Nejprve spočítej příklad.;4
-„Pokud je dnes pondělí, jaký den bude za 14 dní?“; 14 dní jsou dva týdny.;pondeli
-„Mám ručičky, ale neumím tleskat. Co jsem?“; Ukazuji čas.;hodiny
-„Jsem číslo mezi 10 a 20. Když mě rozdělíš dvěma, dostaneš 8. Co jsem?“;Jsem sudé číslo.;16
-„Kolik písmen má číslo 100?“; Nehledej číslice, ale slovo.;3
-„Pokud je dnes středa, jaký den bude za 21 dní?“; 21 dní jsou tři týdny.;středa
-„Vidíš skrz mě, ale přesto zavírám okno. Co jsem?“; Visím u okna.;závěs
-„Jsem liché číslo. Když ke mně přičteš 2, dostaneš 11. Co jsem?“;Jsem menší než 10.;9
-„Kolik písmen má číslo, které vznikne jako 2 × 2?“; Nejprve vypočítej příklad.;4
-„Pokud je dnes sobota, jaký den bude za 9 dní?“; 7 dní je týden.;pondělí
-„Mluvím bez úst a odpovídám ti. Co jsem?“; Slyšíš mě v horách.;echo
-„Jsem číslo menší než 10. Když ode mě odečteš 1, dostaneš 6. Co jsem?“; Jsem liché číslo.;7
-„Kolik písmen má číslo 7?“; Přemýšlej o slově, ne o číslici.;4
-„Pokud je dnes úterý, jaký den bude za 100 dní?“; 98 dní je přesně 14 týdnů.;čtvrtek
-„Ukazuji tvůj obličej, ale nejsem člověk. Co jsem?“; Najdeš mě v koupelně.;zrcadlo
-„Jsem sudé číslo větší než 5. Když ke mně přičteš 4, dostaneš 12. Co jsem?“; Jsem menší než 10.;8
-„Kolik písmen má číslo, které je výsledkem 3 + 3?“; Nejprve spočítej součet.;4
-„Pokud je dnes čtvrtek, jaký den bude za 28 dní?“; 28 dní jsou čtyři týdny.;čtvrtek
-„Mám klávesy, ale žádné dveře neotevřu. Co jsem?“; Hraju hudbu.;klavir
+“I'm an even number smaller than 10. If you multiply me by three, you get 18. What am I?”; I am greater than 5.;6
+“How many letters does the number that is the sum of 4 and 4 have?”; First solve the equation.;5
+“If today is Monday, what day will it be in 14 days?”; 14 days is two weeks.;Monday
+“I have hands, but I can't clap. What am I?”; I show the time.;clock
+“I'm a number between 10 and 20. If you divide me by two, you get 8. What am I?”;I am an even number.;16
+“How many letters does the number 99 have?”; Don’t look at the digits, but at the word.;10
+“If today is Wednesday, what day will it be in 21 days?”; 21 days is three weeks.;Wednesday
+“You can see through me, but I still cover the window. What am I?”; I hang by the window.;curtain
+“I'm an odd number. If you add 2 to me, you get 11. What am I?”;I am smaller than 10.;9
+“How many letters does the number made by 2 × 2 have?”; First calculate the equation.;4
+“If today is Saturday, what day will it be in 9 days?”; 7 days is one week.;Monday
+“I speak without a mouth and answer you. What am I?”; You hear me in the mountains.;echo
+“I'm a number smaller than 10. If you subtract 1 from me, you get 6. What am I?”; I am an odd number.;7
+“How many letters does the number 7 have?”; Think about the word, not the digit.;5
+“If today is Tuesday, what day will it be in 100 days?”; 98 days is exactly 14 weeks.;Thursday
+“I show your face, but I’m not a person. What am I?”; You can find me in the bathroom.;mirror
+“I'm an even number greater than 5. If you add 4 to me, you get 12. What am I?”; I am smaller than 10.;8
+“How many letters does the number that is the result of 3 + 3 have?”; First calculate the sum.;3
+“If today is Thursday, what day will it be in 28 days?”; 28 days is four weeks.;Thursday
+“I have keys, but I can’t open any doors. What am I?”; I play music.;piano

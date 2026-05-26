@@ -11,7 +11,7 @@ public class Game
     public Game(ILogger logger)
     {
         _logger = logger;
-        GetRiddle();
+        GetRiddle();        
     }
     /// <summary>
     /// Makes a folder that will store all riddles, answers and hints, which i can than use individually
@@ -26,7 +26,7 @@ public class Game
                 while ((line = reader.ReadLine()) != null)
                 {
                     string[] field = line.Split(";"); 
-                    riddles.Add(new Riddle(field[0].Trim(), field[1].Trim(), field[2].Trim()));
+                    riddles.Add(new Riddle(field[0].ToLower().Trim(), field[1].ToLower().Trim(), field[2].ToLower().Trim()));
                 }
                 reader.Close();  
             }
@@ -46,7 +46,6 @@ public class Game
         
         }
     }
-    
     /// <summary>
     /// Writes the starting message
     /// </summary>
@@ -64,24 +63,22 @@ public class Game
                 s.Close();  
             }
         }
-            
         catch (FileNotFoundException)
         {
-            _logger.WriteInformation("file wasnt found");
+            _logger.WriteInputMistake("file wasnt found");
         }
         catch (IOException)
         {
-            _logger.WriteInformation("problem with file");
+            _logger.WriteInputMistake("problem with file");
         }
         catch (Exception)
         {
-            _logger.WriteInformation("error");
+            _logger.WriteInputMistake("error");
             
         } 
         
         Console.ReadLine();
     }
-
     /// <summary>
     /// picks 3 random riddles from
     /// </summary>
@@ -90,10 +87,6 @@ public class Game
         Random random = new Random();
         return riddles.OrderBy(x => random.Next(0, 100)).ToList();
     }
-    
-    
-    
-
     public void Play() 
     {
         var riddles = GetRandomRiddles();
@@ -118,7 +111,6 @@ public class Game
         }
         Console.WriteLine($"Your all random digits are: {digits}");
     }
-
     public void GuessCode()
     {
         string input = "";
@@ -130,38 +122,37 @@ public class Game
                 input = Console.ReadLine().ToLower();
                 if (input == "")
                 {
-                    _logger.WriteInformation("You have to write something.");
+                    _logger.WriteInputMistake("You have to write something.");
                 }
                 if (input.Length != 4)
                 {
-                    _logger.WriteInformation("Code must contain exactly 4 digits.");
+                    _logger.WriteInputMistake("Code must contain exactly 4 digits.");
                 }
 
                 int number;
                 if (!int.TryParse(input, out number))
                 {
-                    _logger.WriteInformation("Only numbers possible.");
+                    _logger.WriteInputMistake("Only numbers possible.");
                     continue;
                 }
 
                 if (digitalCode.CorrectCode() != input)
                 {
-                    _logger.WriteInformation("Wrong code, try again.");
+                    _logger.WriteWrongAnswer("Wrong code, try again.");
                     _logger.WriteInformation(digitalCode.GetCountOfCorrectDigits(input));
                 }
 
                 if (digitalCode.CorrectCode() == input)
                 {
-                    Console.WriteLine("You have finally escaped, congrats.");
+                    _logger.WriteRightAnswer("You have finally escaped, congrats.");
                 }
             }
             catch (Exception e)
             {
-                Console.WriteLine("Something went wrong");
+                _logger.WriteInputMistake("Something went wrong");
             }
         }
     }
-    
     /// <summary>
     /// starts the program
     /// </summary>
