@@ -16,7 +16,23 @@ public class Selection
         do
         {
             key = Console.ReadKey(true).Key;
+            if (key == ConsoleKey.UpArrow && selected >0)
+            {
+                selected--;
+            }
+            else if(key == ConsoleKey.UpArrow&& selected >0)
+            {
+                selected = possibleDecisions.Count -1;
+            }
             
+            if (key == ConsoleKey.DownArrow&& selected < possibleDecisions.Count)
+            {
+                 selected ++;
+            }
+            else if(key == ConsoleKey.DownArrow && selected == possibleDecisions.Count -1)
+            {
+                selected = 0;
+            }
         }while(key != ConsoleKey.Enter);
 
         
@@ -36,12 +52,16 @@ public class Selection
 
     private void DrawSelected(string item)
     {
-        
+        Console.BackgroundColor = ConsoleColor.DarkGreen;
+        Console.WriteLine(item);
+        Console.ResetColor();
     }
 
     private void DrawUnselected(string item)
     {
+        Console.BackgroundColor = ConsoleColor.White;
         System.Console.WriteLine(item);
+        Console.ResetColor();
     }
    
 }
