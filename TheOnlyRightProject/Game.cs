@@ -1,6 +1,6 @@
 namespace TheOnlyRightProject;
 /// <summary>
-/// Game class 
+/// Game class will manage the flow of the game
 /// </summary>
 public class Game
 {
@@ -80,13 +80,16 @@ public class Game
         Console.ReadLine();
     }
     /// <summary>
-    /// picks 3 random riddles from
+    ///  returns riddles in arandom order
     /// </summary>
     private List<Riddle> GetRandomRiddles()
     {
         Random random = new Random();
         return riddles.OrderBy(x => random.Next(0, 100)).ToList();
     }
+    /// <summary>
+    /// does a loop in which it gives user riddles until it gave 4 than it stops and writes all digits that were generated thruoght this play method
+    /// </summary>
     public void Play() 
     {
         var riddles = GetRandomRiddles();
@@ -109,8 +112,11 @@ public class Game
                 break;
             }
         }
-        Console.WriteLine($"Your all random digits are: {digits}");
+        _logger.WriteInformation($"Your all random digits are: {digits}");
     }
+    /// <summary>
+    /// user is guessing the code here
+    /// </summary>
     public void GuessCode()
     {
         string input = "";

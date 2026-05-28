@@ -1,5 +1,7 @@
 namespace TheOnlyRightProject;
-
+/// <summary>
+/// interface that will get messages in the game
+/// </summary>
 public interface ILogger
 {
     public void WriteInformation(string message);

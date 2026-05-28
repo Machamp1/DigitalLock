@@ -1,5 +1,7 @@
 namespace TheOnlyRightProject;
-
+/// <summary>
+/// class for one single riddle
+/// </summary>
 public class Riddle
 {
         public string Question { get; set; }
@@ -12,7 +14,10 @@ public class Riddle
             Hint = hint;
             Answer = answer;
         }
-    
+        /// <summary>
+        /// the stage of player answering on riddles
+        /// </summary>
+        /// <returns></returns>
         public int RiddleExecute()
         {
             string input = "";
