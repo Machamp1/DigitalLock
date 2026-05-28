@@ -30,7 +30,7 @@ public class DigitalCode
             throw new ArgumentException("All digits were shown");
         }
         Random random = new Random();
-        byte index = (byte)random.Next(0, UnshownDigits.Count - 1);
+        byte index = (byte)random.Next(0, UnshownDigits.Count);
         byte number = UnshownDigits[index];
         UnshownDigits.RemoveAt(index);
         return number;

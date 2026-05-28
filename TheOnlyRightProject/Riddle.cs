@@ -5,6 +5,7 @@ public class Riddle
         public string Question { get; set; }
         public string Hint { get; set; }
         public string Answer { get; set; }
+        private ILogger _logger;
         public Riddle(string question, string hint, string answer)
         {
             Question = question;
@@ -19,39 +20,27 @@ public class Riddle
             {
                 try
                 {
-                    Console.ForegroundColor = ConsoleColor.DarkGreen;
-                    Console.WriteLine(Question);
-                    Console.ResetColor();
-                    input = Console.ReadLine().ToLower();
+                    _logger.WriteInformation(Question);
+                    input = Console.ReadLine().ToLower().Trim();
                     if (input == "")
                     {
-                        Console.ForegroundColor = ConsoleColor.DarkYellow;
-                        Console.WriteLine("You have to write something.");
-                        Console.ResetColor();
+                        _logger.WriteInputMistake("You have to write something.");
                     }
                     if (input == Answer)
                     {
-                        Console.ForegroundColor = ConsoleColor.DarkGreen;
-                        Console.WriteLine("Amazing!");
-                        Console.ResetColor();
+                        _logger.WriteRightAnswer("Amazing!");
                         return 1;
                     }
-                    Console.ForegroundColor = ConsoleColor.DarkRed;
-                    Console.WriteLine("Your answer was incorrect.");
-                    Console.ResetColor();
-                    Console.ForegroundColor = ConsoleColor.DarkCyan;
-                    Console.WriteLine("If you want:");
-                    Console.WriteLine("1) A hint press H");
-                    Console.WriteLine("2) To resign press R");
-                    Console.WriteLine("3) To proceed press enter");
-                    Console.ResetColor();
+                    _logger.WriteWrongAnswer("Your answer was incorrect.");
+                    _logger.WriteInformation("If you want:");
+                    _logger.WriteInformation("1) A hint press H");
+                    _logger.WriteInformation("2) To resign press R");
+                    _logger.WriteInformation("3) To proceed press enter");
                     string choice = Console.ReadLine().ToLower().Trim();
                     switch (choice)
                     {
                         case "h":
-                            Console.ForegroundColor = ConsoleColor.DarkMagenta;
-                            Console.WriteLine(Hint);
-                            Console.ResetColor();
+                            _logger.WriteInformation(Hint);
                             break;
                         case "r":
                             return 0;
@@ -59,15 +48,19 @@ public class Riddle
                             continue;
                     }
                 }
-                catch (Exception e)
+                catch (FileNotFoundException)
                 {
-                    Console.ForegroundColor = ConsoleColor.DarkYellow;
-                    Console.WriteLine("There was a mistake somewhere.");
-                    Console.ResetColor();
-                
+                    _logger.WriteInformation("file wasnt found");
+                }
+                catch (IOException)
+                {
+                    _logger.WriteInformation("problem with file");
+                }
+                catch (Exception)
+                {
+                    _logger.WriteInputMistake("There was a mistake somewhere.");
                 }
             }
-
             return 0;
         }
 }

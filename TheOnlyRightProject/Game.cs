@@ -1,10 +1,10 @@
 namespace TheOnlyRightProject;
 /// <summary>
-/// Game class
+/// Game class 
 /// </summary>
 public class Game
 {
-    public List<Riddle> riddles = new List<Riddle>();
+    private List<Riddle> riddles = new List<Riddle>();
     private ILogger _logger;
     private DigitalCode digitalCode = new DigitalCode(4);
 
@@ -23,7 +23,7 @@ public class Game
             using(StreamReader reader = new StreamReader("text.txt"))
             {
                 string line = "";
-                while ((line = reader.ReadLine()) != null)
+                while ((line = reader.ReadLine().ToLower().Trim()) != null)
                 {
                     string[] field = line.Split(";"); 
                     riddles.Add(new Riddle(field[0].ToLower().Trim(), field[1].ToLower().Trim(), field[2].ToLower().Trim()));
@@ -56,7 +56,7 @@ public class Game
             using(StreamReader s = new StreamReader("StartingMessage.txt"))
             {
                 string line = "";
-                while ((line = s.ReadLine()) != null)
+                while ((line = s.ReadLine().ToLower().Trim()) != null)
                 {
                     _logger.WriteInformation(line); 
                 }
@@ -123,10 +123,12 @@ public class Game
                 if (input == "")
                 {
                     _logger.WriteInputMistake("You have to write something.");
+                    continue;
                 }
                 if (input.Length != 4)
                 {
                     _logger.WriteInputMistake("Code must contain exactly 4 digits.");
+                    continue;
                 }
 
                 int number;
@@ -147,9 +149,9 @@ public class Game
                     _logger.WriteRightAnswer("You have finally escaped, congrats.");
                 }
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                _logger.WriteInputMistake("Something went wrong");
+                _logger.WriteInputMistake("Error");
             }
         }
     }
@@ -164,8 +166,8 @@ public class Game
         Selection selection = new Selection(new string[]
         {
                "1) A hint press H",
-                  "2) To resign press R",
-                    "3) To proceed press enter"
+                "2) To resign press R",
+                "3) To proceed press enter"
         });
         var result = selection.Select();
     }
